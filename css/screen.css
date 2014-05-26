@@ -36,7 +36,27 @@ body {
   background: white;
   background-color: white; }
 
-ul, ol { margin-top: 1em !important; }
+ol, ul { margin-top: 1em !important; }
+
+ol li, ul li {
+  list-style-type: none;
+  counter-increment: list;
+  position: relative;
+}
+
+ol li:after {
+  content: counter(list) ".";
+  position: absolute;
+  left: -2.5em;
+  width: 2em;
+  text-align: right;
+  color: red;
+}
+
+ul li:before {
+  content: "• ";
+  color: red;
+}
 
 .frame {
     background-color: #fff;
