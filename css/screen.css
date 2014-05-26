@@ -37,6 +37,7 @@ body {
   background-color: white; }
 
 ol, ul { margin-top: 1em !important; }
+li { margin-bottom: 0.5em !important; }
 
 ol li, ul li {
   list-style-type: none;
