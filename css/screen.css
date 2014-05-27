@@ -36,7 +36,6 @@ body {
   background: white;
   background-color: white; }
 
-ol, ul { margin-top: 1em !important; }
 li { margin-bottom: 0.5em !important; }
 
 ol li, ul li {
@@ -192,7 +191,7 @@ ul li:before {
   top: 0px;
   right: 35px;
   padding: 20px 0px 0px;
-  width: 50px;
+  width: 77px;
   height: 80px;
   background: url('../img/ribbon.svg') no-repeat scroll 0% 0% transparent;
   opacity: 1;
