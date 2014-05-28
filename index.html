@@ -53,7 +53,7 @@
                 </ol>
             </section>
 
-            <section>
+            <section data-transition="linear">
                 <h2>Introdução</h2>
                 <p><b>Definição:</b>
                 As redes de computadores foram criadas para permitir a comunicação e o
@@ -62,7 +62,7 @@
                 meio físico como vetor para a propagação do sinal;</p>
             </section>
 
-            <section  data-transition="slide">
+            <section data-transition="zoom">
                 <h2>Evolução das Redes de Computadores</h2>
                 <ul>
                     <li><b>1961</b> - <i>Leonard Kleinrock</i> propõem um
@@ -128,7 +128,7 @@
                     <img src="img/ethernet.gif">
                 </section>
 
-                <section>
+                <section data-transition="concave">
                     <h2>Redes não cabeadas</h2>
                     <p><b>Definição:</b></br>São meios de transmissão que não
                     necessitam de cabos utilizando-se do ar, que pode trafegar
@@ -304,7 +304,7 @@
                 <section>
                     <h4>Equipamentos</h4>
                     <p>
-                    <b>Placa de Rede:</b><br/> Encarregada de tudo que chega e
+                    <b>Placa de Rede</b><br/> Encarregada de tudo que chega e
                     sai de dados do computador. Possui um endereço físico único
                     (MAC) que vem de fábrica, ela é responsável também pela
                     conversão dos dados que chegam para que o computador
@@ -319,7 +319,7 @@
                     <section>
                         <h4>Equipamentos</h4>
                         <p>
-                        <b>Concentradores:</b><br/> Centralizam os hosts da rede, por exemplo, em uma rede em anel todos os hosts são ligados á um concentrador, que pode ser um hub;
+                        <b>Concentradores</b><br/> Centralizam os hosts da rede, por exemplo, em uma rede em anel todos os hosts são ligados á um concentrador, que pode ser um hub;
                         </p>
                         <img height="300px" src="img/concentradores.jpg">
                         <br/><small>Switch - Cisco Catalyst 2900</small>
@@ -328,7 +328,7 @@
                     <section>
                         <h4>Equipamentos</h4>
                         <p>
-                        <b>Bridges:</b><br/> Trabalham com sub-redes, supondo que queiramos dividir uma rede em sub-redes. Bridges também são capazes de interligar redes que utilizam protocolos distintos;
+                        <b>Bridges</b><br/> Trabalham com sub-redes, supondo que queiramos dividir uma rede em sub-redes. Bridges também são capazes de interligar redes que utilizam protocolos distintos;
                         </p>
                         <img height="300px" src="img/bridge.jpg">
                         <br/><small>Bridge Ethernet - Corinex</small>
@@ -337,7 +337,7 @@
                     <section>
                         <h4>Equipamentos</h4>
                         <p>
-                        <b>Hub:</b><br/> É o equipamento que categorizamos como <i>"burro"</i>, pois, ele é capaz apenas de repassar, repetir o que recebe em broadcast (para todos os hosts), além de não tratar de nenhuma forma os dados;
+                        <b>Hub</b><br/> É o equipamento que categorizamos como <i>"burro"</i>, pois, ele é capaz apenas de repassar, repetir o que recebe em broadcast (para todos os hosts), além de não tratar de nenhuma forma os dados;
                         </p>
                         <img height="300px" src="img/hub.jpg">
                         <br/><small>Hub Ethernet 8 portas</small>
@@ -346,7 +346,7 @@
                     <section>
                         <h4>Equipamentos</h4>
                         <p>
-                        <b>Switches:</b><br/> Faz a mesma função do HUB mas, de uma forma melhorada. O switch faz um tratamento inicial dos dados antes de repassá-lo para a próxima camada, além de transmitir os dados em unicast (apenas para o computador destino, por meio de conexão direta);
+                        <b>Switches</b><br/> Faz a mesma função do HUB mas, de uma forma melhorada. O switch faz um tratamento inicial dos dados antes de repassá-lo para a próxima camada, além de transmitir os dados em unicast (apenas para o computador destino, por meio de conexão direta);
                         </p>
                         <img height="300px" src="img/switch.jpg">
                         <br/><small>Stackable Switch - Netgear FSM7328S</small>
@@ -356,7 +356,7 @@
                 <section>
                     <h4>Equipamentos</h4>
                     <p>
-                    <b>Roteadores:</b><br/> Possui características semelhantes as das bridges, mas os roteadores interligam redes de diferentes segmentos em uma mesma rede. Os roteadores são responsáveis por identificar a melhor rota para a transmissão dos dados, evitando assim colisões de pacotes;
+                    <b>Roteadores</b><br/> Possui características semelhantes as das bridges, mas os roteadores interligam redes de diferentes segmentos em uma mesma rede. Os roteadores são responsáveis por identificar a melhor rota para a transmissão dos dados, evitando assim colisões de pacotes;
                     </p>
                     <img height="300px" src="img/roteador.jpg">
                     <br/><small>Roteadores - Cisco Series 2900 e 1941</small>
@@ -365,7 +365,7 @@
                 <section>
                     <h4>Equipamentos</h4>
                     <p>
-                    <b>Ponto de Acesso (Acess point):</b><br/> Pode ser usado como repetidor por receber um sinal e tratá-lo (aumentá-lo) para repetí-lo, mas tem como função principal prover acesso á rede por wireless. Podemos considerá-lo um HUB wireless.
+                    <b>Ponto de Acesso (Acess point)</b><br/> Pode ser usado como repetidor por receber um sinal e tratá-lo (aumentá-lo) para repetí-lo, mas tem como função principal prover acesso á rede por wireless. Podemos considerá-lo um HUB wireless.
                     </p>
                     <img height="300px" src="img/access_point.jpg">
                     <br/><small>Access Point - TP-Link WDR7500</small>
@@ -374,13 +374,13 @@
                 <section>
                     <h4>Equipamentos</h4>
                     <p>
-                    <b>Placa de rede Wireless:</b><br/> É uma placa de rede (PCI ou USB) com antena integrada, utilizada para receber sinal wireless de um roteador ou um access point e prover acesso á um computador, por exemplo.
+                    <b>Placa de rede Wireless</b><br/> É uma placa de rede (PCI ou USB) com antena integrada, utilizada para receber sinal wireless de um roteador ou um access point e prover acesso á um computador, por exemplo.
                     </p>
                     <img height="300px" src="img/placa_wireless.png">
                     <br/><small>Placa de rede Wireless Asus PCE-AC68</small>
                 </section>
 
-                <section>
+                <section data-transition="zoom">
                     <h2>Topologias</h2>
                     <p>
                     <b>Definição:</b><br/> A palavra Topologia deriva do grego,
@@ -516,12 +516,13 @@
                     </ul>
                 </section>
 
-                <section>
+                <section data-transition="fade">
                     <h2>Protocolos de Comunicação</h2>
                     <p><b>Definição:</b><br/>
                     São regras e padrões que regulamentam a transmissão de
                     dados entre computadores, foi criado visando diminuir a
                     complexidade da infraestrutura das redes.</p>
+                    <img height=400px src="img/protocolos.jpg" />
                 </section>
 
                 <section>
