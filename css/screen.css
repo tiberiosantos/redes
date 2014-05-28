@@ -36,6 +36,12 @@ body {
   background: white;
   background-color: white; }
 
+p, ul {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto; }
+
 li { margin-bottom: 0.5em !important; }
 
 ol li, ul li {
