@@ -506,103 +506,59 @@
                     <h4>Padrão 802 - Definição</h4>
                     <ul>
                         <li class="fragment"><b>Controle lógico:</b><br/> Responsável por endereçar os dados a algum protocolo da camada de rede do receptor;</li>
-                        <li class="fragment"><b>Controle de acesso ao meio (MAC):</b><br/> Define o endereço físico de origem e destino do dispositivo de rede (MAC Adress) que é composto de 6 bytes, onde os primeiros 3 bytes identificam o fabricante e os outros 3 são definidos pelo mesmo;</li>
+                        <li class="fragment"><b>Controle de acesso ao meio (MAC):</b><br/> Define o endereço físico de origem e destino do dispositivo de rede (MAC Adress) que é composto de 6 bytes, onde os primeiros 3 bytes identificam o fabricante e os outros 3 são definidos pelo mesmo;Também tem a função de detectar colisões no meio de transmissão;</li>
                     </ul>
                     Imagem: Figura 6
                 </section>
 
-                <div style="display:none;">
+                <section>
+                    <h4>Padrão 802 - Definição</h4>
+                    <p>Existem vários padrões 802, sendo os principais:</p>
+                    <ul>
+                        <li class="fragment">
+                        <b>IEEE 802.3: Ethernet</b><br>É o principal protocolo de transmissão em redes cabeadas. Utiliza uma técnica denominada Acesso Múltiplo com Detecção de Portadora e Detecção de Colisão (CSMA/CD) que consiste em verificar constantemente o meio de transmissão e observar se nenhuma máquina está transmitindo naquele momento;<br> Em caso de demora para que um quadro (dado) atinja seu destino ou em caso de múltiplos dispositivos transmitirem ao mesmo tempo pode ocorrer uma colisão e o envio de quadros é interrompido por um período de tempo aleatório, até que seja possível transmitir dados novamente;
+                        </li>
+                    </ul>
+                </section>
 
-                    Também tem a função de detectar colisões no meio de
-                    transmissão;
+                <section>
+                    <h4>Padrão 802 - Definição</h4>
+                    <ul>
+                        <li class="fragment">
+                        <b>IEEE 802.5: Token Ring</b><br/>Utilizado em redes que utilizam a topologia em anel, faz uso de um token (autorização) que circula pel oanel, os dispositivos só podem transmitir se o possuírem.
+                        </li>
+                    </ul>
+                </section>
 
-                    Existem vários padrões 802, sendo os principais:
-
-                    IEEE 802.3: Ethernet
-
-                    É o principal protocolo de transmissão em redes cabeadas.
-
-                    Utiliza uma técnica denominada Acesso Múltiplo com Detecção
-                    de Portadora e Detecção de Colisão (CSMA/CD) que consiste
-                    em verificar constantemente o meio de transmissão e
-                    observar se nenhuma máquina está transmitindo naquele
-                    momento;
-
-                    Em caso de demora para que um quadro (dado) atinja seu
-                    destino ou em caso de múltiplos dispositivos transmitirem
-                    ao mesmo tempo pode ocorrer uma colisão e o envio de
-                    quadros é interrompido por um período de tempo aleatório,
-                    até que seja possível transmitir dados novamente;
-
-                    IEE 802.5: Token Ring
-
-                    Utilizado em redes que utilizam a topologia em anel, faz
-                    uso de um token (autorização) que circula pel oanel, os
-                    dispositivos só podem transmitir se o possuírem.
-
-                    ------------ Protocolo TCP/IP
-                    Definição:
-
+                <section>
+                    <h2>Protocolo TCP/IP</h2>
+                    <p>
+                    <b>Definição:</b><br/>
                     Seguindo o modelo OSI foi criado um protocolo para ser
                     usado na internet, o TCP/IP, este é um protocolo de 4
                     camadas apenas, atualmente é o mais usado em redes locais.
                     O TCP/IP é um protocolo roteável, o que torna possível a
                     comunicação de duas redes distintas, além disso ele possui
                     uma arquitetura aberta para que qualquer um possa
-                    modificá-lo ou adaptá-lo as suas necessidades.
+                    modificá-lo ou adaptá-lo as suas necessidades.<br/>
+                    </p>
+                </section>
 
-                    As 4 camadas do TCP/IP.
+                <section>
+                    <h4>Protocolo TCP/IP - Definição</h4>
+                    <p>As 4 camadas do TCP/IP:</p>
+                    <ul>
+                        <li class="fragment"><b>Camada 4: Aplicação</b><br/>Equivale as camadas 7,6 e 5 do Modelo OSI. É a camada que faz a comunicação dos aplicativos com os protocolos de transporte, vamos supor que um cliente necessita descarregar os e-mails localizados em um servidor, o aplicativo faz umas solicitação a camada de aplicação e ela por sua vez comunica-se por meio de uma porta lógica com o protocolo de transporte. Protocolos presentes na camada: HTTP, SMTP, FTP, SNMP, DNS, Telnet.</li>
+                        <li class="fragment"><b>Camada 3: Transporte</b><br/>Equivale a camada 4 do modelo OSI. É a camada responsável por "transformar" os dados enviados pela camada de aplicação em pacotes para que sejam lidos na camada internet. Além de também utilizar uma forma de multiplexação que permite várias aplicações se comunicar com a rede simultaneamente, por meio de intercalação dos pacotes no ato do envio. Os pacotes enviados são identificados pelas informações neles contidos, como porta lógica da origem e do destino do pacote. Protocolos presentes na camada: TCP, UDP.</li>
+                    </ul>
+                </section>
 
-                    Camada 4: Aplicação
-
-                    Equivale as camadas 7,6 e 5 do Modelo OSI. É a camada que
-                    faz a comunicação dos aplicativos com os protocolos de
-                    transporte, vamos supor que um cliente necessita
-                    descarregar os e-mails localizados em um servidor, o
-                    aplicativo faz umas solicitação a camada de aplicação e ela
-                    por sua vez comunica-se por meio de uma porta lógica com o
-                    protocolo de transporte.
-
-                    Protocolos presentes na camada: HTTP, SMTP, FTP, SNMP, DNS,
-                    Telnet.
-
-                    Camada 3: Transporte
-
-                    Equivale a camada 4 do modelo OSI. É a camada responsável
-                    por "transformar" os dados enviados pela camada de
-                    aplicação em pacotes para que sejam lidos na camada
-                    internet. Além de também utilizar uma forma de
-                    multiplexação que permite várias aplicações se comunicar
-                    com a rede simultaneamente, por meio de intercalação dos
-                    pacotes no ato do envio.
-
-                    Os pacotes enviados são identificados pelas informações
-                    neles contidos, como porta lógica da origem e do destino do
-                    pacote.
-
-                    Protocolos presentes na camada: TCP, UDP.
-
-                    Camada 2: Internet
-
-                    Equivale a camada 3 do Modelo OSI. É responsável por
-                    indicar a rota que o pacote percorrerá, lembrando que os
-                    pacotes recebidos da camada de transporte são transformados
-                    em datagramas nesta camada.
-
-                    Protocolos presentes na camada: IP, ICMP, ARP, RARP.
-
-                    Camada 1: Interface com a Rede
-
-                    Equivalente as camadas 2 e 1 do Modelo OSI.
-
-                    Essa camada é a responsável por enviar datagramas recebidos
-                    das camadas anteriores pelo meio físico. Também é
-                    responsável por encontrar a rota mais curta e confiável
-                    para entrega desses pacotes.
-
-                    Protocolos presentes na camada: Ethernet WIFI.
-
-                </div>
+                <section>
+                    <ul>
+                        <li class="fragment"><b>Camada 2: Internet</b><br/>Equivale a camada 3 do Modelo OSI. É responsável por indicar a rota que o pacote percorrerá, lembrando que os pacotes recebidos da camada de transporte são transformados em datagramas nesta camada. Protocolos presentes na camada: IP, ICMP, ARP, RARP.</li>
+                        <li class="fragment"><b>Camada 1: Interface com a Rede</b><br/>Equivalente as camadas 2 e 1 do Modelo OSI. Essa camada é a responsável por enviar datagramas recebidos das camadas anteriores pelo meio físico. Também é responsável por encontrar a rota mais curta e confiável para entrega desses pacotes.Protocolos presentes na camada: Ethernet, WIFI.</li>
+                    </ul>
+                </section>
             </div>
 
         </div>
